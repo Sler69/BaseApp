@@ -1,0 +1,1 @@
+import Form from './Pages/initial/inital'
