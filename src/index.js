@@ -1,1 +1,1 @@
-import Form from './Pages/initial/inital'
+import Form from './Pages/initial/inital-app'

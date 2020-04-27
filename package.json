@@ -2,12 +2,13 @@
   "name": "BaseApp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server_modules/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
-  },
+    "start": "node src/server-modules/app.js",
+    "watch": "webpack --watch --mode development"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sler69/BaseApp.git"
@@ -26,11 +27,16 @@
     "babel-loader": "^8.1.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.11",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
