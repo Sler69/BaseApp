@@ -26,26 +26,18 @@ class Form extends Component {
 
 
   render() {
+    console.log("render")
     return (
       <div>
-        <h1>Pokedex!</h1>
-        <TextField
-          id="newpokemon"
-          onChange={handleInputPokemon}
-        >
-          
-        </TextField>
-        {this.state.pokemons.map((element, index) => {
-          return <div>
-              <p>Pokemon</p>
-          </div>
-        })}
+        <div>HELLO</div>
+        <div>Worlds</div>
       </div>
     );
   }
 }
-
+console.log("HELLOOOOO")
 export default Form;
 
 const wrapper = document.getElementById("container");
+console.log(wrapper)
 wrapper ? ReactDOM.render(<Form />, wrapper) : false;

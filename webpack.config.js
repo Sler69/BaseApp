@@ -1,5 +1,5 @@
-
-var ManifestPlugin = require('webpack-manifest-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const path = require('path');
 module.exports = {
   entry: {
@@ -7,7 +7,7 @@ module.exports = {
     user: './src/spa-modules/user/lol-app.js'
   },
   output: {
-    filename: '[name].[contenthash].bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   }, 
   module: {
@@ -34,6 +34,7 @@ module.exports = {
     ]
   },
   plugins: [
-
+     new CleanWebpackPlugin(),
+     new ManifestPlugin()
   ]
 };
